@@ -49,7 +49,7 @@ resource "github_repository_file" "app-files" {
 resource "aws_instance" "tf-docker-ec2" {
   ami = "ami-00c39f71452c08778"
   instance_type = "t2.micro"
-  key_name = "sabri.key"
+  key_name = "xxxxxxx"
   vpc_security_group_ids = [aws_security_group.tf-docker-sec-gr.id]
   tags = {
     Name = "Web server of Bookstore"
